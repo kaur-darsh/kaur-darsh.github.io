@@ -3,127 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home - My Portfolio</title>
+<title>Home - Darsh's Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <style>
 body {
-    font-family: 'Verdana', sans-serif;
-    background-color: #eef2f3;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    color: #444;
+    color: #333;
     text-align: center;
 }
 
 header {
-    background-color: #6a4793;
-    padding: 20px;
+    background-color: #2a2d43;
+    padding: 25px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    color: #fff;
+    font-size: 2.2em;
+    color: #f8f9fa;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav {
+    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffcc00;
+    font-size: 1.2em;
+    margin: 0 15px;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: #fdd835;
+nav a:hover {
+    color: #ff5733;
 }
 
-.container {
-    padding: 50px;
-    max-width: 900px;
+.hero {
+    max-width: 800px;
     margin: 50px auto;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-section h2 {
+h2 {
     font-size: 2em;
-    margin-bottom: 15px;
-    color: #6a4793;
+    color: #2a2d43;
 }
 
-section p {
-    font-size: 1.2em;
+p {
+    font-size: 1.1em;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 1em;
     color: #fff;
-    background-color: #6a4793;
+    background-color: #2a2d43;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #5a3c7d;
+    background-color: #1f2233;
 }
 
 footer {
-    background-color: #6a4793;
-    padding: 12px;
+    background-color: #2a2d43;
+    padding: 15px;
     text-align: center;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
-    color: #ddd;
+    color: #ffcc00;
 }
 </style>
 <script>
-function changeBackground() {
-    document.body.style.backgroundColor = document.body.style.backgroundColor === 'white' ? '#eef2f3' : 'white';
+function toggleTheme() {
+    document.body.style.backgroundColor = 
+        document.body.style.backgroundColor === 'white' ? '#f8f9fa' : 'white';
 }
 </script>
 </head>
 <body>
 
 <header>
-<h1>Welcome to My Portfolio</h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <h1>Darsh's Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div class="container">
-<section>
-<h2>Hello! I'm Darsh</h2>
-<p>A passionate learner and explorer, always seeking new experiences and growth.</p>
-<p>Welcome to my personal portfolio, where I showcase my interests, projects, and aspirations.</p>
-<button onclick="changeBackground()">Toggle Background</button>
-</section>
+<div class="hero">
+    <h2>Hey, I'm Darsh!</h2>
+    <p>An ambitious explorer passionate about learning, creativity, and growth.</p>
+    <p>Welcome to my digital space, where I share my journey, projects, and passions.</p>
+    <button onclick="toggleTheme()">Toggle Theme</button>
 </div>
+
+<footer>
+    <p>&copy; 2025 Darsh's Portfolio | Built with passion ❤️</p>
+</footer>
 
 </body>
 </html>
