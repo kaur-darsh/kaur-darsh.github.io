@@ -19,5 +19,9 @@ function toggleDarkMode() {
 
 function displayInput() {
     const name = document.getElementById('name').value;
-    document.getElementById('displayName').innerHTML = `Hello, ${name}!`;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value || "Not specified";
+    const subscribed = document.getElementById('subscribe').checked ? "Yes" : "No";
+    const country = document.getElementById('country').value;
+    
+    document.getElementById('displayName').innerHTML = `Hello, ${name}! Gender: ${gender}, Subscribed: ${subscribed}, Country: ${country}`;
 }
