@@ -19,14 +19,28 @@
         <form onsubmit="displayInput(); return false;">
             <label for="name">Your Name:</label>
             <input type="text" id="name" required>
+            
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            
+            <p>Subscribe to Newsletter:</p>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Yes, sign me up!</label>
+            
+            <p>Select Your Country:</p>
+            <select id="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+            </select>
+            
             <button type="submit">Submit</button>
         </form>
         <p id="displayName"></p>
     </section>
 </body>
 </html>
-
-
-
-
-
