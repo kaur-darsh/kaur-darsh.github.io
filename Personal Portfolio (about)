@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me - My Portfolio</title>
+<title>Contact Me - My Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <style>
 body {
@@ -12,17 +12,18 @@ body {
     margin: 0;
     padding: 0;
     color: #444;
+    text-align: center;
 }
 
 header {
-    background-color: #8b5fbf;
+    background-color: #6a4793;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2em;
+    font-size: 2.5em;
     color: #fff;
 }
 
@@ -40,7 +41,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
@@ -48,26 +49,50 @@ nav ul li a:hover {
 }
 
 .container {
-    padding: 40px;
-    max-width: 850px;
-    margin: 40px auto;
+    padding: 50px;
+    max-width: 600px;
+    margin: 50px auto;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #8b5fbf;
-    text-align: center;
+h2 {
+    color: #6a4793;
 }
 
-section p {
-    font-size: 1.1em;
-    line-height: 1.7;
-    margin-bottom: 15px;
-    text-align: justify;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #6a4793;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a3c7d;
 }
 
 footer {
@@ -88,7 +113,7 @@ footer p {
 <body>
 
 <header>
-<h1>About Me</h1>
+<h1>Contact Me</h1>
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -99,18 +124,21 @@ footer p {
 </header>
 
 <div class="container">
-<section>
-<h2>Who Am I?</h2>
-<p>Hello! I'm Praneet Deol, an explorer at heart who loves discovering new perspectives through photography, hiking, and cultural experiences. Learning is my passion—I dive into new languages like Korean and French, and enjoy mastering skills such as guitar and piano. 
-</p>
-<p>My curiosity extends to psychology, criminology, and law enforcement, and I aspire to make a meaningful impact in elderly care. Volunteering is a key part of my life, whether at food banks or community initiatives. I also love experimenting in the kitchen and creating unique recipes, turning everyday moments into exciting projects.</p>
-<p>Currently, I am a high school student at KSS, always eager to expand my knowledge and embrace new opportunities.</p>
-</section>
+<h2>Get in Touch</h2>
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button type="submit">Send Message</button>
+</form>
 </div>
-
-<footer>
-<p>&copy; 2025 Praneet Deol | My Portfolio</p>
-</footer>
 
 </body>
 </html>
+
