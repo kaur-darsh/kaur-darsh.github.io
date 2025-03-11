@@ -1,134 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home - Darsh's Portfolio</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    text-align: center;
-}
-
-header {
-    background: #2a2d43;
-    padding: 25px;
-    color: #fff;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffcc00;
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    color: #ff5733;
-}
-
-.hero {
-    max-width: 800px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    color: #2a2d43;
-}
-
-button {
-    padding: 12px 25px;
-    background: #2a2d43;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1f2233;
-}
-
-footer {
-    background: #2a2d43;
-    padding: 15px;
-    color: #ffcc00;
-    position: relative;
-    margin-top: 30px;
-}
-
-form {
-    margin-top: 20px;
-}
-</style>
-<script>
-function toggleTheme() {
-    document.body.style.backgroundColor = 
-        document.body.style.backgroundColor === 'white' ? '#f8f9fa' : 'white';
-}
-
-function handleThemeChange(event) {
-    if (event.target.value === 'dark') {
-        document.body.style.backgroundColor = '#333';
-        document.body.style.color = '#fff';
-    } else {
-        document.body.style.backgroundColor = '#f8f9fa';
-        document.body.style.color = '#333';
-    }
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>Darsh's Portfolio</h1>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About Me</a>
         <a href="contact.html">Contact</a>
     </nav>
-</header>
-
-<div class="hero">
-    <h2>Hey, I'm Darsh!</h2>
-    <p>An ambitious explorer passionate about learning, creativity, and growth.</p>
-    <p>Welcome to my digital space, where I share my journey, projects, and passions.</p>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-
-    <form>
-        <div>
-            <label for="themeChoice">Choose your preferred theme:</label><br>
-            <input type="radio" id="light" name="theme" value="light" checked onclick="handleThemeChange(event)">
-            <label for="light">Light</label>
-            <input type="radio" id="dark" name="theme" value="dark" onclick="handleThemeChange(event)">
-            <label for="dark">Dark</label>
-        </div>
-        <div>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to updates</label>
-        </div>
-    </form>
-</div>
-
-<footer>
-    <p>&copy; 2025 Darsh's Portfolio</p>
-</footer>
-
+    <section>
+        <form onsubmit="displayInput(); return false;">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="displayName"></p>
+    </section>
 </body>
 </html>
+
 
 
 
