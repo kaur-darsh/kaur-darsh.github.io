@@ -69,11 +69,25 @@ footer {
     position: relative;
     margin-top: 30px;
 }
+
+form {
+    margin-top: 20px;
+}
 </style>
 <script>
 function toggleTheme() {
     document.body.style.backgroundColor = 
         document.body.style.backgroundColor === 'white' ? '#f8f9fa' : 'white';
+}
+
+function handleThemeChange(event) {
+    if (event.target.value === 'dark') {
+        document.body.style.backgroundColor = '#333';
+        document.body.style.color = '#fff';
+    } else {
+        document.body.style.backgroundColor = '#f8f9fa';
+        document.body.style.color = '#333';
+    }
 }
 </script>
 </head>
@@ -94,19 +108,28 @@ function toggleTheme() {
     <p>Welcome to my digital space, where I share my journey, projects, and passions.</p>
     <button onclick="toggleTheme()">Toggle Theme</button>
 
-    <div>
-        <label for="themeChoice">Choose your preferred theme:</label><br>
-        <input type="radio" id="light" name="theme" value="light" checked><label for="light">Light</label>
-        <input type="radio" id="dark" name="theme" value="dark"><label for="dark">Dark</label>
-    </div>
-    <div>
-        <input type="checkbox" id="subscribe" name="subscribe"><label for="subscribe">Subscribe to updates</label>
-    </div>
+    <form>
+        <div>
+            <label for="themeChoice">Choose your preferred theme:</label><br>
+            <input type="radio" id="light" name="theme" value="light" checked onclick="handleThemeChange(event)">
+            <label for="light">Light</label>
+            <input type="radio" id="dark" name="theme" value="dark" onclick="handleThemeChange(event)">
+            <label for="dark">Dark</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to updates</label>
+        </div>
+    </form>
 </div>
 
+<footer>
+    <p>&copy; 2025 Darsh's Portfolio</p>
+</footer>
 
 </body>
 </html>
+
 
 
 
