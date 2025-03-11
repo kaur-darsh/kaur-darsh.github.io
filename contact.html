@@ -3,108 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Connect with Me</title>
-<link rel="stylesheet" href="style.css">
+<title>Home - Darsh's Portfolio</title>
 <style>
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
     margin: 0;
     padding: 0;
     color: #333;
+    text-align: center;
 }
 
 header {
-    background-color: #4a4e69;
-    padding: 20px;
-    text-align: center;
+    background: #2a2d43;
+    padding: 25px;
+    color: #fff;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.3em;
-    color: #fff;
-}
-
-nav {
-    text-align: center;
-    margin-top: 10px;
+    font-size: 2.2em;
 }
 
 nav a {
     text-decoration: none;
-    color: #f8f9fa;
-    font-size: 1.2em;
-    margin: 0 15px;
+    color: #ffcc00;
     font-weight: bold;
+    margin: 0 15px;
 }
 
 nav a:hover {
-    color: #ff9f1c;
+    color: #ff5733;
 }
 
-.contact-box {
-    max-width: 500px;
+.hero {
+    max-width: 800px;
+    margin: 50px auto;
     background: #fff;
-    padding: 25px;
-    margin: 40px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    color: #4a4e69;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    margin: 8px 0 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    font-size: 1em;
+    color: #2a2d43;
 }
 
 button {
-    margin-top: 12px;
-    padding: 12px;
-    font-size: 1.1em;
-    color: white;
-    background-color: #4a4e69;
+    padding: 12px 25px;
+    background: #2a2d43;
+    color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #2d3142;
+    background: #1f2233;
 }
 
 footer {
-    background-color: #4a4e69;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background: #2a2d43;
+    padding: 15px;
+    color: #ffcc00;
     position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 30px;
 }
 </style>
+<script>
+function toggleTheme() {
+    document.body.style.backgroundColor = 
+        document.body.style.backgroundColor === 'white' ? '#f8f9fa' : 'white';
+}
+</script>
 </head>
 <body>
 
 <header>
-    <h1>Contact Me</h1>
+    <h1>Darsh's Portfolio</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -112,27 +88,25 @@ footer {
     </nav>
 </header>
 
-<div class="contact-box">
-    <h2>Let's Connect</h2>
-    <form action="#" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write something..." required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
+<div class="hero">
+    <h2>Hey, I'm Darsh!</h2>
+    <p>An ambitious explorer passionate about learning, creativity, and growth.</p>
+    <p>Welcome to my digital space, where I share my journey, projects, and passions.</p>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <div>
+        <label for="themeChoice">Choose your preferred theme:</label><br>
+        <input type="radio" id="light" name="theme" value="light" checked><label for="light">Light</label>
+        <input type="radio" id="dark" name="theme" value="dark"><label for="dark">Dark</label>
+    </div>
+    <div>
+        <input type="checkbox" id="subscribe" name="subscribe"><label for="subscribe">Subscribe to updates</label>
+    </div>
 </div>
 
-<footer>
-    <p>&copy; 2025 My Portfolio | Designed with ❤️</p>
-</footer>
 
 </body>
 </html>
+
 
 
