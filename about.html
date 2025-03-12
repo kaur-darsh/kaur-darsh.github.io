@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: lightblue; /* Internal CSS */
-        }
-    </style>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>Your Name</h1>
+        <img src="your-image.jpg" alt="Your Image" width="150px">
+        <p style="color: darkred; font-weight: bold;">Welcome to my portfolio website!</p> <!-- Inline CSS -->
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -21,11 +19,11 @@
         <a href="contact.html">Contact</a>
     </nav>
     <section>
-        <h2>Hobbies</h2>
-        <p>Detail your hobbies here.</p>
-        <h2>Education</h2>
-        <p>Share your educational background.</p>
+        <p id="greeting"></p>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </section>
 </body>
 </html>
+
 
