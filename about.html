@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Internal CSS for About Page */
+        /* Combined CSS (inline, internal, and external styles) */
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #eef2f3;
             color: #333;
-            font-family: Arial, sans-serif;
+            text-align: center;
         }
+
+        header {
+            padding: 50px;
+            background: #333;
+            color: white;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Hover effect */
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -20,14 +49,30 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             color: #007bff;
             border-bottom: 2px solid #007bff;
             padding-bottom: 5px;
             display: inline-block;
         }
+
         p {
             line-height: 1.6;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px;
+            }
+            nav {
+                padding: 5px;
+            }
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
