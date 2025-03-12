@@ -10,7 +10,9 @@ if (currentTime < 12) {
 document.getElementById('greeting').innerHTML = greetingMessage;
 
 function changeBackgroundColor() {
-    document.body.style.backgroundColor = 'lightgreen';
+    const colors = ['lightgreen', 'lightblue', 'lightpink', 'lightyellow', 'lightcoral'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
 }
 
 function toggleDarkMode() {
