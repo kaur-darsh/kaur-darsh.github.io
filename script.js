@@ -26,4 +26,5 @@ function displayInput() {
     const country = document.getElementById('country').value;
     
     document.getElementById('displayName').innerHTML = `Hello, ${name}! Gender: ${gender}, Subscribed: ${subscribed}, Country: ${country}`;
+    document.forms[0].reset(); // Reset form fields after submission
 }
