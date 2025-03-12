@@ -4,14 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darshpreet - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Combined CSS (inline, internal, and external styles) */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px;
+            background: #333;
+            color: white;
+        }
+
+        .welcome-text {
+            color: white;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Hover effect */
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+
+        .dark-mode nav {
+            background-color: #444;
+        }
+
+        .dark-mode nav a {
+            color: #ffcc00;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px;
+            }
+            nav {
+                padding: 5px;
+            }
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Darshpreet</h1>
-        <img src="https://live.staticflickr.com/735/32901852082_38ee69309d_z.jpg" alt="" width="150px">
-        <p style="color: white; font-weight: bold;">Welcome to my portfolio website!</p> <!-- Inline CSS -->
+        <img src="https://live.staticflickr.com/735/32901852082_38ee69309d_z.jpg" alt="Profile Picture" width="150px">
+        <p class="welcome-text">Welcome to my portfolio website!</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
